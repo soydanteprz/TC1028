@@ -13,7 +13,7 @@ El motivo de este README es para establecer el proyecto que estaré llevando aca
     - APG = suma de los puntos realizados / numero de juegos
   - %FG (Field Goals Percentage) = Del total de sus tiros, cuentos encesta.
     - %FG = Total de tiros / total de tiros encestados  
-7. Si el usuario lo desea podra calcular ambas estadísticas (partido y jugador)
-8. Devuelve estadísticas completas
-9. Opción de enviar los resultados a correo
-10. EF
+6. Si el usuario lo desea podra calcular ambas estadísticas (partido y jugador)
+7. Devuelve estadísticas completas
+8. Opción de enviar los resultados a correo
+9. EF
