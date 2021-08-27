@@ -7,7 +7,13 @@ El motivo de este README es para establecer el proyecto que estaré llevando aca
 3. Entrada de datos generales (ejemplo: correo, nombre del jugador, altura, peso, puntos, etc.)
 4. Dependiendo de los datos el sistema deduce si es un jugador o los datos del partido
 5. Calcular porcentajes (ejemplo: PPG, APG, FG%, etc)
-6. Si el usuario lo desea podra calcular ambas estadísticas (partido y jugador)
-7. Devuelve estadísticas completas
-8. Opción de enviar los resultados a correo
-9. EF
+  - PPG (points per game): Hacer un promedio de cuanto puntos por partido hace.
+    - PPG = suma de los puntos realizados / numero de juegos
+  - **APG** (assists per game): Hacer un promedio de cuantas asistencias por partido hace
+    - APG = suma de los puntos realizados / numero de juegos
+  - %FG (Field Goals Percentage) = Del total de sus tiros, cuentos encesta.
+    - %FG = Total de tiros / total de tiros encestados  
+7. Si el usuario lo desea podra calcular ambas estadísticas (partido y jugador)
+8. Devuelve estadísticas completas
+9. Opción de enviar los resultados a correo
+10. EF
