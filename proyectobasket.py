@@ -4,34 +4,41 @@ def field_goals(t, g):
     return (g / t) * 100
 
 
-def promedio_pg(a, b, c, d, e):
+def prom_pg(a, b, c, d, e):
     return (a++b+c+d+e)/5
+
+
+def match_points(pt):
+    i = 1
+    su = 0
+    while i <= pt:
+        print("Cuántos puntos metiste en el partido", i, "?")
+        acum = int(input())
+        su = su + acum
+        i = i + 1
+    return su/pt
 
 
 # INTRODUCCION
 
-print("Bienvenido a tu programa de basketball favorito")
-print("PRESIONA 1 Estadisticas solo un partido\nPRESIONA 2 Puntos por partido\nPRESIONA 3 Field Goals  ")
-opcion = int(input("Elige la opción  "))
+print("Bienvenido a tu programa de Basketball favorito")
+print("PRESIONA 1 - Estadísticas solo un partido\nPRESIONA 2 - Puntos por partido\nPRESIONA 3 - Field Goals  ")
+option = int(input("Elige la opción  "))
 
-# CONDICIONAL PARA SABER QUE SE  VA A OPERAR
+# CONDICIONAL PARA SABER QUE SE  VA A OPERAR ES INDISPENSABLE
 
-if opcion == 1:
-    punto = int(input("Cuántos puntos metiste hoy  "))
-    asistencia = int(input("Cuantas asistencias hiciste hoy  "))
-    tiros = int(input("cuantos tiros hiciste  "))
-    goals = int(input("Cuantos anotaste  "))
-    fg = (goals * 100) / tiros
-    print("tu porcentaje de tiros es de", fg, "%")
-    print("Hoy metiste", punto, "pts", asistencia, "ast")
-elif opcion == 2:
-    game1 = int(input("Cuántos puntos metiste en el juego 1?  "))
-    game2 = int(input("Cuántos puntos metiste en el juego 2?  "))
-    game3 = int(input("Cuántos puntos metiste en el juego 3?  "))
-    game4 = int(input("Cuántos puntos metiste en el juego 4?  "))
-    game5 = int(input("Cuántos puntos metiste en el juego 5?  "))
-    print("Tu PPG es de", promedio_pg(game1, game2, game3, game4, game5))
-elif opcion == 3:
+if option == 1:
+    points = int(input("Cuántos puntos metiste hoy?  "))
+    assist = int(input("Cuántas asistencias hiciste hoy?  "))
+    shots = int(input("Cuántos tiros hiciste?  "))
+    goals = int(input("Cuántos anotaste?  "))
+    fg = (goals * 100) / shots
+    print("Tu porcentaje de tiros es de", fg, "%")
+    print("Hoy metiste", points, "pts", assist, "ast")
+elif option == 2:
+    num3 = int(input("Cuántos partidos jugaste?  "))
+    print("Tu PPG es de ", match_points(num3))
+elif option == 3:
     num1 = int(input("Cuántos tiros realizaste?  "))
     num2 = int(input("Cuántos tiros metiste?  "))
-    print("Tu FG% es de", field_goals(num1, num2), "%")
+    print("Tu FG% es de", "%.2f" % field_goals(num1, num2), "%")
