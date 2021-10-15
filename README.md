@@ -4,7 +4,7 @@ El motivo de este README es para establecer el proyecto que estaré llevando aca
 #### PSEUDOCÓDIGO
 1. EO
 2. Despliegue de introducción
-3. Entrada de datos generales (ejemplo: correo, nombre del jugador, altura, peso, puntos, etc.)
+3. Entrada de datos generales (ejemplo: nombre del jugador, altura, peso, puntos, etc.)
 4. Dependiendo de los datos el sistema deduce si es un jugador o los datos del partido
 5. Calcular porcentajes (ejemplo: PPG, APG, FG%, etc)
   - PPG (points per game): Hacer un promedio de cuanto puntos por partido hace.
@@ -14,7 +14,6 @@ El motivo de este README es para establecer el proyecto que estaré llevando aca
   - %FG (Field Goals Percentage) = Del total de sus tiros, cuentos encesta.
     - %FG = Total de tiros / total de tiros encestados
   - TOP 5: el programa devuelve el top 5 de jugadores con más puntos historicamente
-6. Si el usuario lo desea podra calcular ambas estadísticas (partido y jugador)
+6. Si el usuario lo desea podra calcular todas las estadísticas
 7. Devuelve estadísticas completas
-8. Opción de enviar los resultados a correo
 9. EF
