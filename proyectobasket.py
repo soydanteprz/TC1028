@@ -11,7 +11,7 @@ muestra los mejores jugadores en la historia
 "Esta librería la saque del siguiente de la 
 API https://docs.python.org/3/library/datetime.html
 y la utilizo para mostrar al final del programa la fecha 
-y hora en la que el programa fue ejucatado
+y hora en la que el usuario ejecutó el programa
 """
 
 from datetime import datetime
@@ -42,6 +42,25 @@ def match_points(pt):
     su = 0
     while cont <= pt:
         print("Cuántos puntos metiste en el partido", cont, "?")
+        acum = int(input())
+        su = su + acum
+        cont = cont + 1
+    return su / pt
+
+
+def match_assist(pt):
+    """
+    La funcion es reutilizada para calcular promedio de puntos y
+    promedio de asistencias.
+    Recibe: pt como valor númerico.
+    Acumula los puntos realizados por el usuario para después dividirlo
+    entre los partidos que tuvo.
+    Devuelve: Resultado de operación númerico (promedio).
+    """
+    cont = 1
+    su = 0
+    while cont <= pt:
+        print("Cuántas asistencias tuviste en el partido", cont, "?")
         acum = int(input())
         su = su + acum
         cont = cont + 1
@@ -105,7 +124,7 @@ while option != 6:
         print("Tu PPG es de ", match_points(num3))
     elif option == 3:
         num4 = int(input("Cuántos partidos jugaste?  "))
-        print("Tu APG es de ", match_points(num4))
+        print("Tu APG es de ", match_assist(num4))
     elif option == 4:
         num1 = int(input("Cuántos tiros realizaste?  "))
         num2 = int(input("Cuántos tiros metiste?  "))
