@@ -2,7 +2,7 @@
 Dante David Pérez Pérez
 A01709226
 Proyecto TC1028
-El programa realiza una seria de estadística básica
+El programa realiza una serie de estadística básica
 que es utilizada en partidos de basketball además
 muestra los mejores jugadores en la historia
 """
@@ -115,10 +115,10 @@ while option != 6:
         assist = int(input("Cuántas asistencias hiciste hoy?  "))
         shots = int(input("Cuántos tiros hiciste?  "))
         goals = int(input("Cuántos anotaste?  "))
-        fg = (goals * 100) / shots
+        fg = (goals/shots)*100
         match1 = [points, assist, shots, goals, fg]
-        print("Tu porcentaje de tiros es de", fg, "%")
-        print("Hoy metiste", points, "pts", assist, "ast")
+        print("Tu porcentaje de tiros es de", format(fg, ".2f"), "%")
+        print("Hoy metiste", points, "pts", "y", assist, "ast")
     elif option == 2:
         num3 = int(input("Cuántos partidos jugaste?  "))
         print("Tu PPG es de ", match_points(num3))
