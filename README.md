@@ -1,5 +1,5 @@
 # PROYECTO PARA TC1028
-El motivo de este README es para establecer el proyecto que estaré llevando acabo simultaneamente con los temas vistos en clase, en este primer avance estaré dando a conocer el proyecto que tengo planeado en mente. Este progama consiste enque cualquier persona que lo use tenga la opción de ver las estdísticas y las pueda comprender.
+El motivo de este README es para establecer el proyecto que estaré llevando acabo simultaneamente con los temas vistos en clase, en este primer avance estaré dando a conocer el proyecto que tengo planeado en mente. Este progama consiste en que cualquier persona que lo use tenga la opción de ver las estdísticas y las pueda comprender.
 ### ***PROGAMA QUE TE DE DICE LAS ESTADÍSTICAS DEL PARTIDO Y DEL JUGADOR (SCOREBOARD)***
 #### PSEUDOCÓDIGO
 1. EO
